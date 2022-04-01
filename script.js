@@ -50,4 +50,26 @@ function palindroma(parolaInserita){
   }
   return
 }
-console.log(palindroma(parolaInserita));
+console.log(palindroma(parolaInserita)); /* DA CONTROLLARE */
+
+/////////////////////////////////////////////////
+// 2. Pari e Dispari
+// L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+// Sommiamo i due numeri
+// Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+// Dichiariamo chi ha vinto.
+
+// Flowchart 
+// A[INIZIO]
+// 1. Chiedi all'utente di scegliere tra pari e dispari
+// 2. Salva la scelta dell'utente in una variabile
+// 3. Chiedi all'utente di scegliere un numero da 1 a 5
+// 4. Salva la scelta dell'utente in una variabile
+// 5. Crea una funzione che generi un numero random da 1 a 5
+// 6. Applica la funzione *2 volte e salva il risultato in due variabili distinte
+// 7. Somma le due variabili risultato
+// 8. Determina se la somma è un numero pari o dispari
+// 9. Confronta il il punto 2 con il punto 8
+//10. Dichiara il vincitore
+// Z[FINE]
