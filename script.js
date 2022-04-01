@@ -19,13 +19,35 @@
 // Flowchart
 // A[INIZIO] --> B[Chiedere all’utente di inserire una parola]
 // B -->|human| C[Prendere la parola inserita]
-// C --> D0[Applicare la funzione giraParola alla parola inserita ]
-//       D0 --> D1 [Creo la funzione giraParola con argomento la variabile parola inserita dall'utente]
+// C --> D0[Applicare la funzione palindroma alla parola inserita ]
+//       D0 --> D1 [Creo la funzione palindroma con argomento la variabile parola inserita dall'utente]
 //       D1 --> D2 [nella variabile lettere splitto la parola]
 //       D3 --> D4 [creo un ciclo for dove metto un contatore che i conti i cicli a sottrarre le lettere da lettere]
 //       D4 --> D5 [quindi aggiungo a parolaGirata i cicli di lettere]
 //       D6 --> D7 [al termine del ciclo la funzione deve restituirmi il contenuto di parolaGirata]
-// D7 --> E{La parola inserita è uguale al risultato di giraParola?}
+// D7 --> E{La parola inserita è uguale al risultato di palindroma?}
 // E -->|si| F[La parola inserita è palindroma]
 // E -->|no| G[La parola inserita non è palindroma]
 // F & G --> Z[FINE]
+
+const parolaInserita = prompt("Inserisci una parola");
+
+function palindroma(parolaInserita){
+  let lettere = parolaInserita.split("");
+  console.log(lettere);
+  
+  let parolaGirata = '';
+  
+  for (let i = lettere.length - 1; i >= 0; i--){
+    parolaGirata += lettere[i];
+  } 
+  if(parolaInserita === parolaGirata){
+    console.log(parolaInserita, " è una parola palindroma.");
+    console.log(parolaInserita, " = ", parolaGirata);
+  } else {
+    console.log("Non è una parola palindroma ", parolaInserita);
+    console.log(parolaInserita, " != ", parolaGirata);
+  }
+  return
+}
+console.log(palindroma(parolaInserita));
